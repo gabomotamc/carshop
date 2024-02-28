@@ -1,0 +1,37 @@
+{   
+    "name": "gabomotamc/carshop",
+    "description": "Car shop managment",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Gabo Mota Chong",
+            "email": "gabomota.me@gmail.com",
+            "role": "Developer",
+            "homepage": "https://dev.gaboworks.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controller\\":"controllers/",
+            "Core\\":"core/",
+            "Helpers\\":"helpers/",
+            "Migrations\\":"migrations/",
+            "Models\\":"models/"                  
+        },
+        "files": [
+            "controllers/SellerController.php",
+            "core/Db.php",
+            "helpers/Api.php",
+            "migrations/SellerMigration.php",
+            "models/Seller.php"
+        ]
+    },
+    "require": {
+        "coffeecode/router": "^2.0",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
